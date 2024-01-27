@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Instagram layout of JJ</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <!--Nav Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+        <i class="fa fa-instagram mr-2" aria-hidden="true"></i>
+        <h5 class="mb-0">Instagram</h5>
+            <div class="d-flex ml-auto mr-5">          
+                    <button type="button" class="btn btn-success mr-5" data-toggle="modal" data-target="#exampleModal">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group"></div>
+                                <label>Caption</label>
+                                <textarea class="form-control" rows="3" id="caption" placeholder="Add a caption of your Post here..."></textarea>
+                                <button type="button" class="btn btn-light mt-2">
+                                <i class="fa fa-camera" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-light mt-2">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Publish</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>           
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle mr-5" type="button" id="dropDownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accessibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid mt-3">
+          <!-- Tab pills -->
+            <ul class="nav nav-pills justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" 
+                type="button" 
+                id="pills-feed-tab" 
+                data-target="#pills-feed" 
+                data-toggle="pill"
+                ><i class="fa fa-table text-dark bg-white" aria-hidden="true"></i>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-0 bg-white"
+                type="button" 
+                id="pills-photo-tab" 
+                data-target="#pills-photo" 
+                data-toggle="pill"
+                ><i class="fa fa-square text-secondary" aria-hidden="true"></i>
+              </a>
+              </li>
+            </ul>
+</div>
+
+        <div class="tab-content">
+
+          <!-- Feed tab pane -->
+          <div
+          class="tab-pane fade active show"
+          id="pills-feed"
+          role="tabpanel"
+          aria-labelledby="pills-feed-tab"
+          >
+            <div class="container-fluid g-1 mt-4">
+              <h3>This is Feed Tab</h3>
+            </div>
+        </div>
+
+        </div>
+
+
+        <!-- Photo Tab Pane-->
+        <div class="tab-pane fade"
+        id="pills-photo"
+        role="tabpanel"
+        aria-labelledby="pills-photo-tab"
+        >  
+        <div class="container-fluid g-1 mt-4">
+          <div class="row g-1 mb-1">
+            <div class="col-4">
+              <img
+              class="img-fluid"
+              src="https://picsum.photos/id/237/500/400"
+              height="400"
+              width="400"
+              alt="image">
+            </div>
+            <div class="col-4">
+              <img
+              class="img-fluid"
+              src="https://picsum.photos/id/237/500/400"
+              height="400"
+              width="400"
+              alt="image">
+            </div>
+            <div class="col-4">
+              <img
+              class="img-fluid"
+              src="https://picsum.photos/id/237/500/400"
+              height="400"
+              width="400"
+              alt="image">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
