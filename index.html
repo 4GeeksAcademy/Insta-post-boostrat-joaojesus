@@ -6,6 +6,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -63,128 +64,170 @@
 
         <div class="container-fluid mt-3">
           <!-- Tab pills -->
-            <ul class="nav nav-pills justify-content-center">
+          <ul class="nav nav-pills justify-content-center">
               <li class="nav-item">
-                <a class="nav-link"
-                id="pills-photo-tab" 
-                data-target="#pills-photo" 
-                data-toggle="pill"
-                ><i class="fa fa-table text-dark bg-white" aria-hidden="true"></i>
-              </a>
+                  <a class="nav-link"
+                   id="pills-photo-tab" 
+                   data-toggle="pill"
+                    href="#pills-photo">
+                      <i class="fa fa-table text-dark bg-white" aria-hidden="true"></i>
+                  </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active"
-                id="pills-feed-tab" 
-                data-target="#pills-feed" 
-                data-toggle="pill"
-                ><i class="fa fa-square text-secondary" aria-hidden="true"></i>
-              </a>
+                  <a class="nav-link active" 
+                  id="pills-feed-tab" data-toggle="pill" 
+                  href="#pills-feed">
+                      <i class="fa fa-square text-secondary" aria-hidden="true"></i>
+                  </a>
               </li>
-            </ul>
-          </div>
-
+          </ul>
+      
           <div class="tab-content">
-
-            <!-- Feed tab pane -->
+            <!-- Feed Tab Pane -->
             <div
               class="tab-pane fade active show"
               id="pills-feed"
               role="tabpanel"
-              aria-labelledby="pills-feed-tab">
-          
-              <div class="container-fluid g-1 mt-4 mb-4 col-4 mt-auto">
-                <h3>My dog Spark!</h3>
+              aria-labelledby="pills-feed-tab"
+            >
+              <div class="container-fluid g-1 mt-4">
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4 p-0">
+                    <!--First Post-->
+                    <div class="border mb-3 bg-light">
+                      <div class="d-flex">
+                        <h6 class="m-0 mt-1 ml-1">My crazy dog Spark</h6>
+                        <p class="ml-auto mr-1"><b>08/26</b></p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg"
+                          alt="dog photo"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="pb-3">
+                        <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
+                        <p class="m-0 ml-1">
+                          This is an example of a very good photo that you can post
+                          on Instagram
+                        </p>
+                      </div>
+                    </div>
+                    <!--Second Post Post-->
+                    <div class="border mb-3 bg-light">
+                      <div class="d-flex">
+                        <h6 class="m-0 mt-1 ml-1">The greatness of Croatia</h6>
+                        <p class="ml-auto"><b>04/09</b></p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://katahillsidehotel.com/site/assets/files/1990/kata-hillside-hotel-phuket-karon-viewpoint-2022-04-03-14-52-28.jpg"
+                          alt="viewpoint"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="pb-3">
+                        <p class="m-0 mb-1 mt-1 ml-1"><b>26985 Likes</b></p>
+                        <p class="m-0 ml-1">
+                          This is an example of a very good photo that you can post
+                          on Instagram
+                        </p>
+                      </div>
+                    </div>
+                    <div class="border mb-3 bg-light">
+                      <div class="d-flex">
+                        <h6 class="m-0 mt-1 ml-1">Amazing Goal by Cristiano</h6>
+                        <p class="ml-auto">06/10</p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJWW7ZnLfKCE0y-CjC0h_oessnjGV63z8hA&usqp=CAU"
+                          alt="scoring"
+                          class="img-fluid w-100"
+                        />
+                      </div>
+                      <div class="pb-3">
+                        <p class="m-0 mb-1 mt-1 ml-1"><b>204 Likes</b></p>
+                        <p class="m-0 ml-1">
+                          This is an example of a very good photo that you can post
+                          on Instagram
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+            </div>
+      
+              <!-- Photo Tab Pane-->
+              <div
+          class="tab-pane fade"
+          id="pills-photo"
+          role="tabpanel"
+          aria-labelledby="pills-photo-tab"
+        >
+          <div class="container-fluid g-1 mt-4">
+            <div class="row">
+              <div class="col-4 p-1">
+                <img
+                  src="https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg"
+                  alt="dog photo"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="https://community.thriveglobal.com/wp-content/uploads/2019/03/timetobehappy.jpg"
+                  alt="happiness"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="family"
+                  class="img-fluid h-50 mb-2"
+                />
+              </div>
+              <div class="col-4 p-1">
+                <img
+                  src="https://youth.europa.eu/d8/sites/default/files/styles/1200x600/public/2022-01/Jint-47.jpg?itok=zIn_8GFM"
+                  alt="young people"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="https://www.travelandleisure.com/thmb/SPUPzO88ZXq6P4Sm4mC5Xuinoik=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg"
+                  alt="eiffel tower"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="https://miro.medium.com/v2/resize:fit:1200/1*P_H_UpQahH0juwQpXWXnpQ.jpeg"
+                  alt="coding"
+                  class="img-fluid h-50 mb-2"
+                />
+              </div>
+              <div class="col-4 p-1">
+                <img
+                  src="https://katahillsidehotel.com/site/assets/files/1990/kata-hillside-hotel-phuket-karon-viewpoint-2022-04-03-14-52-28.jpg"
+                  alt="viewpoint"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJWW7ZnLfKCE0y-CjC0h_oessnjGV63z8hA&usqp=CAU"
+                  alt="scoring"
+                  class="img-fluid h-50 mb-2"
+                />
+                <img
+                  src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/2023-04/GettyImages-88752144.jpg"
+                  alt="studying"
+                  class="img-fluid h-50 mb-2"
+                />
               </div>
             </div>
           </div>
-       </div>
-        <!-- Photo Tab Pane-->
-        <div class="tab-pane fade"
-        id="pills-photo"
-        role="tabpanel"
-        aria-labelledby="pills-photo-tab"
-        >  
-        <div class="container-fluid g-1 mt-4">
-          <div class="row g-1 mb-1">
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4 h-50"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image"
-             
-              >
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4 h-50"
-              src="https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-            <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-             <div class="col-4">
-              <img
-              class="img-fluid mb-4"
-              src="https://picsum.photos/id/237/500/400"
-              height="400"
-              width="400"
-              alt="image">
-            </div>
-          </div>
         </div>
-            
       </div>
-
+    </div>
+      
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
